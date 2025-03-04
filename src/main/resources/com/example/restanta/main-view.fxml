@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.restanta.controller.MainController">
+
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+    <!-- Tabel pentru rezervări -->
+    <TableView fx:id="bookingTableView" prefWidth="800" prefHeight="250">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="licenseColumn" text="License Plate" prefWidth="150"/>
+            <TableColumn fx:id="timeColumn" text="Minutes" prefWidth="80"/>
+            <TableColumn fx:id="statusColumn" text="Status" prefWidth="100"/>
+            <TableColumn fx:id="creationColumn" text="Creation Date" prefWidth="200"/>
+            <TableColumn fx:id="startDateColumn" text="Start Date" prefWidth="200"/>
+            <TableColumn fx:id="endDateColumn" text="End Date" prefWidth="200"/>
+            <TableColumn fx:id="parkingSlotColumn" text="Parking Slot" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+
+    <!-- Formular pentru adăugarea unei noi rezervări -->
+    <TextField fx:id="licensePlateField" promptText="Enter license plate" maxWidth="300"/>
+    <TextField fx:id="timeField" promptText="Enter booking time (minutes)" maxWidth="300"/>
+
+    <!-- Buton pentru trimiterea cererii -->
+    <Button fx:id="sendRequestButton" text="Send Request" maxWidth="200"/>
+
+</VBox>

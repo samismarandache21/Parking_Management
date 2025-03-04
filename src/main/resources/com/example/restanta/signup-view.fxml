@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.restanta.controller.SignUpController">
+    <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+    <Button fx:id="newClientButton" text="New Client"/>
+</VBox>
